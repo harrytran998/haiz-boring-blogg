@@ -3,6 +3,10 @@
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sortKeys": true,
   "cSpell.words": [
-    "Vitesse"
-  ]
+    "Vitesse",
+    "nprogress"
+  ],
+  "files.associations": {
+    "*.postcss": "css"
+  }
 }

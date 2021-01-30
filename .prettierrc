@@ -1,0 +1,12 @@
+{
+  "printWidth": 120,
+  "semi": false,
+  "arrowParens": "always",
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "*.postcss",
+      "options": { "parser": "css", "printWidth": 80 }
+    }
+  ]
+}
