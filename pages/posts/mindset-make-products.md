@@ -1,0 +1,1 @@
+- 1 tính năng cần phải đi từ mục đích sâu xa của người dùng
