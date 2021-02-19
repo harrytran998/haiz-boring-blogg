@@ -1,11 +1,31 @@
 {
-  "i18n-ally.localesPaths": "locales",
-  "i18n-ally.keystyle": "nested",
-  "i18n-ally.sortKeys": true,
-  "cSpell.language": "en,vi",
-  "files.associations": {
-    "*.postcss": "css"
+  "volar.tsPlugin": true,
+  // ===
+  // Event Triggers
+  // ===
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
   },
-  "css.validate": false,
-  "scss.validate": false,
+  "eslint.options": {
+    "extensions": [".html", ".js", ".vue", ".ts"]
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "vue-html",
+    "html"
+  ],
+  // Disable when validator when working with tailwindcss
+  "scss.validate": true,
+  "css.validate": true,
+  // Git
+  "git.ignoreLimitWarning": true,
+  "git.allowNoVerifyCommit": false,
+  "git.confirmForcePush": true,
+  "cSpell.language": "en,vi"
 }

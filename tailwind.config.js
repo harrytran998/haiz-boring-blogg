@@ -4,13 +4,7 @@ const typography = require('@tailwindcss/typography')
 module.exports = {
   purge: {
     enabled: process.env.NODE_ENV === 'production',
-    content: [
-      './index.html',
-      './src/**/*.vue',
-      './src/**/*.md',
-      './src/**/*.js',
-      './src/**/*.ts',
-    ],
+    content: ['./index.html', './src/**/*.vue', './src/**/*.md', './src/**/*.js', './src/**/*.ts'],
     options: {
       safelist: ['prose', 'prose-sm', 'm-auto'],
     },
@@ -28,6 +22,10 @@ module.exports = {
     extend: {
       colors: {
         teal: colors.teal,
+      },
+      fontFamily: {
+        sans:
+          '"Inter", Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji',
       },
       typography: {
         DEFAULT: {

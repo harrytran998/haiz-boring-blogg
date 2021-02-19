@@ -5,6 +5,9 @@ import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components'
+import WindiCSS from 'vite-plugin-windicss'
+import Layouts from 'vite-plugin-vue-layouts'
+
 import Markdown from 'vite-plugin-md'
 
 import markdownPrism from 'markdown-it-prism'
@@ -25,6 +28,7 @@ const config: UserConfig = {
       'dayjs',
       'dayjs/plugin/localizedFormat',
     ],
+    exclude: ['vue-demi'],
   },
   plugins: [
     Vue({
@@ -35,6 +39,11 @@ const config: UserConfig = {
     Pages({
       extensions: ['vue', 'md'],
       pagesDir: 'pages',
+    }),
+
+    Layouts(),
+    WindiCSS({
+      safelist: 'prose prose-sm m-auto',
     }),
 
     // https://github.com/antfu/vite-plugin-md
@@ -75,6 +84,10 @@ const config: UserConfig = {
     // https://github.com/antfu/vite-plugin-icons
     ViteIcons(),
   ],
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+  },
 }
 
 export default config

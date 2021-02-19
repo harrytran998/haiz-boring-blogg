@@ -2,13 +2,18 @@
     "version": "0.1",
     "words": [
         "camelcase",
+        "cleartype",
+        "demi",
         "esno",
         "harrytran",
         "iconify",
+        "msapplication",
         "nprogress",
         "octokit",
         "Vite",
+        "vitejs",
         "vuedx",
-        "vueuse"
+        "vueuse",
+        "windicss"
     ]
 }

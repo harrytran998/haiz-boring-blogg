@@ -2,11 +2,5 @@
   "printWidth": 100,
   "semi": false,
   "arrowParens": "always",
-  "singleQuote": true,
-  "overrides": [
-    {
-      "files": "*.postcss",
-      "options": { "parser": "css", "printWidth": 80 }
-    }
-  ]
+  "singleQuote": true
 }
